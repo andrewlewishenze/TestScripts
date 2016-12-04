@@ -1,0 +1,26 @@
+
+
+//$log.debug("ALH0:scope: " +Object.keys($scope));
+//$log.debug("ALH1:scope.responses: " +Object.keys($scope.responses));
+//$log.debug("ALH2:scope.responses.answers: " +Object.keys($scope.responses.answers));
+//$log.debug("ALH3:scope.responses.questions: " +Object.keys($scope.responses.questions));
+//$log.debug("ALH4:scope.responses.meta: " +Object.keys($scope.responses.meta));
+
+
+var obj; 
+obj = $scope.section;
+Object.keys(obj).forEach(function(val, idx, array) {
+  console.log('key:' + val + ' -> ' + obj[val]);
+});
+
+obj = $scope.responses;
+Object.keys(obj).forEach(function(val, idx, array) {
+  console.log('key:' + val + ' -> ' + obj[val]);
+});
+
+// Logging property names and values using Array.forEach
+//Object.getOwnPropertyNames(obj).forEach(function(val, idx, array) {
+//  console.log('property: ' + val + ' -> ' + obj[val]);
+//});
+
+//$scope.responses.answers[$scope.section.slug]['q-1-rzjeoap'].value = 999;

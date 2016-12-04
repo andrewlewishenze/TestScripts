@@ -1,0 +1,14 @@
+ d-1-plmocxp q-60-loeieji
+ 
+ d-1-plmocxp_q-60-loeieji
+ 
+ 
+ isHideQuestion -> function (e){return!$scope.section.question_data[e].hide}
+VM36554:12 questionForm -> [object Object]
+VM36554:12 surveys -> [object Object]
+VM36554:12 survey -> [object Object]
+VM36554:12 section -> [object Object]
+VM36554:12 time_to_repeat -> 1
+VM36554:12 repeat_context -> undefined
+VM36554:12 section_template -> sections/repeat.html
+VM36554:12 repeat_index_array -> 0

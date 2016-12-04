@@ -1,0 +1,73 @@
+
+
+//$log.debug("ALH0:scope: " +Object.keys($scope));
+//$log.debug("ALH1:scope.responses: " +Object.keys($scope.responses));
+//$log.debug("ALH2:scope.responses.answers: " +Object.keys($scope.responses.answers));
+//$log.debug("ALH3:scope.responses.questions: " +Object.keys($scope.responses.questions));
+//$log.debug("ALH4:scope.responses.meta: " +Object.keys($scope.responses.meta));
+
+
+var obj;
+obj = $scope;
+Object.keys(obj).forEach(function(val, idx, array) {
+  console.log('scope key:' + val + ' -> ' + obj[val]);
+});
+console.log('____________________________________________________________________________________________________________');
+obj = $scope.questionForm;
+Object.keys(obj).forEach(function(val, idx, array) {
+  console.log('scope.questionForm key:' + val + ' -> ' + obj[val]);
+});
+console.log('____________________________________________________________________________________________________________');
+obj = $scope.section;
+Object.keys(obj).forEach(function(val, idx, array) {
+  console.log('section key:' + val + ' -> ' + obj[val]);
+});
+console.log('____________________________________________________________________________________________________________');
+obj = $scope.section.title;
+Object.keys(obj).forEach(function(val, idx, array) {
+  console.log('section.title key:' + val + ' -> ' + obj[val]);
+});
+console.log('____________________________________________________________________________________________________________');
+obj = $scope.section.questions;
+Object.keys(obj).forEach(function(val, idx, array) {
+  console.log('section.questions key:' + val + ' -> ' + obj[val]);
+});
+console.log('____________________________________________________________________________________________________________');
+obj = $scope.section.question_data;
+Object.keys(obj).forEach(function(val, idx, array) {
+  console.log('section.question_data key: idx' + idx + ' - ' + val + ' -> ' + obj[val]);
+});
+console.log('____________________________________________________________________________________________________________');
+obj = $scope.section.question_data;
+//console.log('[0]'+$scope.section.question_data[0]);
+//Object.keys(obj).forEach(function(val, idx, array) {
+//  console.log('section.question_data[0] key: idx' + idx + ' - ' + val + ' -> ' + obj[val]);
+//});
+console.log('____________________________________________________________________________________________________________');
+obj = $scope.responses;
+Object.keys(obj).forEach(function(val, idx, array) {
+  console.log('responses key:' + val + ' -> ' + obj[val]);
+});
+console.log('____________________________________________________________________________________________________________');
+//obj = $scope.responses.answers;
+//Object.keys(obj).forEach(function(val, idx, array) {
+//  console.log('responses.answers key:' + val + ' -> ' + obj[val]);
+//});
+console.log('____________________________________________________________________________________________________________');
+obj = $scope.responses.answers;
+Object.keys(obj).forEach(function(val, idx, array) {
+  console.log('responses.answers key:' + val + ' -> ' + obj[val]);
+});
+console.log('____________________________________________________________________________________________________________');
+obj = $scope.responses.meta;
+Object.keys(obj).forEach(function(val, idx, array) {
+  console.log('responses.meta key:' + val + ' -> ' + obj[val]);
+});
+console.log('____________________________________________________________________________________________________________');
+
+// Logging property names and values using Array.forEach
+//Object.getOwnPropertyNames(obj).forEach(function(val, idx, array) {
+//  console.log('property: ' + val + ' -> ' + obj[val]);
+//});
+
+//$scope.responses.answers[$scope.section.slug]['q-1-rzjeoap'].value = 999;
